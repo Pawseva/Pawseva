@@ -1,23 +1,119 @@
-<section id="adopt">
-  <h2 style="text-align:center; margin-bottom: 30px;">Meet Our Friends</h2>
-  <div class="pets">
-    <div class="pet-card">
-      <img src="https://i.imgur.com/dv7xM5b.jpg" alt="Dog 1" />
-      <h3>Rocky</h3>
-      <p>Male • 2 Years • Friendly & Playful</p>
-      <button class="btn">Adopt Me</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Paw Seva - Help Stray Animals</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; line-height: 1.6; background-color: #f9f9f9; }
+
+    header {
+      background: url('https://i.imgur.com/7lT1XDs.jpg') no-repeat center center/cover;
+      height: 90vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 { font-size: 3rem; margin-bottom: 20px; }
+    header p { font-size: 1.2rem; max-width: 600px; }
+    .btn {
+      padding: 12px 24px;
+      background: #ff6b6b;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      margin: 10px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .pets {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .pet-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      padding: 20px;
+    }
+    .pet-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Paw Seva</h1>
+    <p>We help stray animals find loving homes. Be a part of the change!</p>
+    <a href="#adopt" class="btn">Adopt Now</a>
+    <a href="#donate" class="btn">Donate</a>
+  </header>
+
+  <section id="adopt">
+    <h2 style="text-align:center; margin-bottom: 30px;">Meet Our Friends</h2>
+    <div class="pets">
+      <div class="pet-card">
+        <img src="https://i.imgur.com/1Vq5VHt.jpg" alt="Dog 1" />
+        <h3>Rocky</h3>
+        <p>Male • 2 Years • Friendly</p>
+        <button class="btn">Adopt Me</button>
+      </div>
+      <div class="pet-card">
+        <img src="https://i.imgur.com/xnWfYkN.jpg" alt="Dog 2" />
+        <h3>Luna</h3>
+        <p>Female • 1.5 Years • Calm & Cute</p>
+        <button class="btn">Adopt Me</button>
+      </div>
+      <div class="pet-card">
+        <img src="https://i.imgur.com/4P0WTvD.jpg" alt="Cat" />
+        <h3>Simba</h3>
+        <p>Male • 3 Years • Loves to cuddle</p>
+        <button class="btn">Adopt Me</button>
+      </div>
     </div>
-    <div class="pet-card">
-      <img src="https://i.imgur.com/9cK5VlC.jpg" alt="Dog 2" />
-      <h3>Luna</h3>
-      <p>Female • 1.5 Years • Calm & Cute</p>
-      <button class="btn">Adopt Me</button>
-    </div>
-    <div class="pet-card">
-      <img src="https://i.imgur.com/BKX2K79.jpg" alt="Dog 3" />
-      <h3>Simba</h3>
-      <p>Male • 3 Years • Cuddly & Smart</p>
-      <button class="btn">Adopt Me</button>
-    </div>
-  </div>
-</section>
+  </section>
+
+  <section id="donate" style="text-align:center;">
+    <h2>Support Our Cause</h2>
+    <p style="max-width: 700px; margin: 20px auto;">Your donation helps us feed, shelter, and provide medical care for stray animals.</p>
+    <img src="https://i.imgur.com/GkpKqXK.png" alt="Donate QR" style="max-width: 300px; border-radius: 10px;" />
+    <p style="margin-top: 10px;">Scan to donate via UPI</p>
+  </section>
+
+  <footer>
+    <p>Made with ❤️ by Paw Seva Team | © 2025</p>
+  </footer>
+
+</body>
+</html>
