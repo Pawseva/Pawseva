@@ -1,97 +1,119 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PawSeva | Help Rescue Dogs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Paw Seva - Help Stray Animals</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fffaf0; }
-    header { background: #ff7043; color: white; padding: 1rem; text-align: center; }
-    nav { background: #ffab91; display: flex; justify-content: center; gap: 1rem; padding: 0.5rem 0; }
-    nav a { color: white; text-decoration: none; font-weight: bold; }
-    section { padding: 2rem; }
-    .hero { text-align: center; background: #ffe0b2; padding: 2rem 1rem; }
-    .dogs, .stories { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
-    .card { background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-    .card img { width: 100%; border-radius: 8px; }
-    footer { background: #ff7043; color: white; text-align: center; padding: 1rem; }
-    .donate-box { background: #fff3e0; padding: 2rem; text-align: center; border-radius: 8px; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; line-height: 1.6; background-color: #f9f9f9; }
+
+    header {
+      background: url('https://i.imgur.com/7lT1XDs.jpg') no-repeat center center/cover;
+      height: 90vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 { font-size: 3rem; margin-bottom: 20px; }
+    header p { font-size: 1.2rem; max-width: 600px; }
+    .btn {
+      padding: 12px 24px;
+      background: #ff6b6b;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      margin: 10px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .pets {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .pet-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      padding: 20px;
+    }
+    .pet-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+    }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>PawSeva</h1>
-    <p>Give Voice to the Voiceless – Help Rescue & Care for Dogs</p>
+    <h1>Welcome to Paw Seva</h1>
+    <p>We help stray animals find loving homes. Be a part of the change!</p>
+    <a href="#adopt" class="btn">Adopt Now</a>
+    <a href="#donate" class="btn">Donate</a>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#dogs">Our Dogs</a>
-    <a href="#stories">Rescue Stories</a>
-    <a href="#donate">Donate</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section class="hero">
-    <h2>Welcome to PawSeva</h2>
-    <p>We rescue, care, and rehome stray and injured dogs with love.</p>
-  </section>
-
-  <section id="about">
-    <h2>About Us</h2>
-    <p>PawSeva is a non-profit organization dedicated to rescuing stray and injured dogs. Our mission is to provide shelter, medical care, and forever homes to our furry friends.</p>
-  </section>
-
-  <section id="dogs">
-    <h2>Our Dogs</h2>
-    <div class="dogs">
-      <div class="card">
-        <img src="https://place-puppy.com/300x200" alt="Dog 1">
-        <h3>Rani</h3>
-        <p>Rescued from the streets, now healthy and ready for adoption!</p>
+  <section id="adopt">
+    <h2 style="text-align:center; margin-bottom: 30px;">Meet Our Friends</h2>
+    <div class="pets">
+      <div class="pet-card">
+        <img src="https://i.imgur.com/1Vq5VHt.jpg" alt="Dog 1" />
+        <h3>Rocky</h3>
+        <p>Male • 2 Years • Friendly</p>
+        <button class="btn">Adopt Me</button>
       </div>
-      <div class="card">
-        <img src="https://place-puppy.com/301x200" alt="Dog 2">
+      <div class="pet-card">
+        <img src="https://i.imgur.com/xnWfYkN.jpg" alt="Dog 2" />
+        <h3>Luna</h3>
+        <p>Female • 1.5 Years • Calm & Cute</p>
+        <button class="btn">Adopt Me</button>
+      </div>
+      <div class="pet-card">
+        <img src="https://i.imgur.com/4P0WTvD.jpg" alt="Cat" />
         <h3>Simba</h3>
-        <p>Found injured, Simba is now playful and recovering well.</p>
+        <p>Male • 3 Years • Loves to cuddle</p>
+        <button class="btn">Adopt Me</button>
       </div>
     </div>
   </section>
 
-  <section id="stories">
-    <h2>Rescue Stories</h2>
-    <div class="stories">
-      <div class="card">
-        <h3>Moti's Journey</h3>
-        <p>Moti was hit by a car and left alone. Our team treated his wounds, and now he’s a happy, tail-wagging champ!</p>
-      </div>
-      <div class="card">
-        <h3>Chikki's Miracle</h3>
-        <p>Chikki was rescued from a drain, severely dehydrated. Today, she’s healthy and adopted into a loving home.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="donate">
-    <h2>Donate</h2>
-    <div class="donate-box">
-      <p>Your contribution helps save lives. Support food, treatment, and shelter for our rescued dogs.</p>
-      <p><strong>UPI ID:</strong> pawseva@upi</p>
-      <p>Or scan the QR below to donate:</p>
-      <img src="https://via.placeholder.com/200x200?text=QR+Code" alt="Donate QR Code">
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: contact@pawseva.org</p>
-    <p>Phone: +91-9876543210</p>
-    <p>Location: Lucknow, Uttar Pradesh</p>
+  <section id="donate" style="text-align:center;">
+    <h2>Support Our Cause</h2>
+    <p style="max-width: 700px; margin: 20px auto;">Your donation helps us feed, shelter, and provide medical care for stray animals.</p>
+    <img src="https://i.imgur.com/GkpKqXK.png" alt="Donate QR" style="max-width: 300px; border-radius: 10px;" />
+    <p style="margin-top: 10px;">Scan to donate via UPI</p>
   </section>
 
   <footer>
-    <p>&copy; 2025 PawSeva. All Rights Reserved.</p>
+    <p>Made with ❤️ by Paw Seva Team | © 2025</p>
   </footer>
+
 </body>
 </html>
