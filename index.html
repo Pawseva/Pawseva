@@ -2,77 +2,61 @@
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pahadi News</title>
+    <title>पहाड़ी न्यूज़</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #eef2f3;
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f0f0;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #2c3e50;
+            background-color: #2e7d32;
             color: white;
-            padding: 1rem;
+            padding: 20px;
             text-align: center;
         }
-        nav {
-            background-color: #34495e;
+        .news-container {
             display: flex;
-            justify-content: center;
-            padding: 0.5rem;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
         }
-        nav a {
-            color: white;
-            margin: 0 1rem;
-            text-decoration: none;
-        }
-        main {
-            padding: 2rem;
-        }
-        article {
+        .news-item {
             background-color: white;
-            padding: 1rem;
-            margin-bottom: 1rem;
-            border-radius: 5px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
-        footer {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 1rem;
+        .news-item img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .news-title {
+            font-size: 1.5em;
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Pahadi News</h1>
-        <p>Latest News from the Hills - पहाड़ों की ताज़ा खबरें</p>
+        <h1>पहाड़ी न्यूज़</h1>
+        <p>ताज़ा खबरें सीधे पहाड़ों से</p>
     </header>
 
-    <nav>
-        <a href="#">होम</a>
-        <a href="#">उत्तराखंड</a>
-        <a href="#">हिमाचल</a>
-        <a href="#">मौसम</a>
-        <a href="#">संपर्क करें</a>
-    </nav>
+    <div class="news-container">
+        <div class="news-item">
+            <img src="https://via.placeholder.com/600x300?text=Breaking+News+1" alt="समाचार 1">
+            <div class="news-title">उत्तराखंड में भारी बारिश का अलर्ट</div>
+            <p>मौसम विभाग ने अगले 48 घंटों में तेज बारिश की चेतावनी दी है। प्रशासन ने सभी लोगों से सतर्क रहने की अपील की है।</p>
+        </div>
+        <div class="news-item">
+            <img src="https://via.placeholder.com/600x300?text=Breaking+News+2" alt="समाचार 2">
+            <div class="news-title">पहाड़ी मेले में उमड़ा जनसैलाब</div>
+            <p>गढ़वाल के प्रसिद्ध मेले में हज़ारों की संख्या में लोग पहुंचे। लोक नृत्य, व्यंजन और सांस्कृतिक कार्यक्रमों ने लोगों का मन मोह लिया।</p>
+        </div>
+    </div>
 
-    <main>
-        <article>
-            <h2>उत्तराखंड में भारी बारिश की चेतावनी</h2>
-            <p>मौसम विभाग ने अगले तीन दिनों तक भारी बारिश का अलर्ट जारी किया है...</p>
-        </article>
-
-        <article>
-            <h2>हिमाचल में सड़क हादसे में 5 की मौत</h2>
-            <p>कुल्लू जिले में एक बस खाई में गिरने से 5 लोगों की मौत हो गई...</p>
-        </article>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Pahadi News | All Rights Reserved</p>
-    </footer>
 </body>
 </html>
